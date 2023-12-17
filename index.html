@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Animación</title> 
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="text">Roy Rivas</h1>
+    <main class="container">
+        <nav class="nav">
+            <img src="assets/img/f1.png" alt="logo f1" height="50px">
+        </nav>
+        <div class="teams navega">
+            <h4>Choose one Option</h4>
+            <ul>
+                <li><a id="adrvrs" href="#idrvrs">Drivers</a></li>
+                <li><a id="atms" href="#itms">Teams</a></li>
+                <li><a id="acrs" href="#icrs">Cars</a></li>
+                <li><a id="adrvrcrs" href="#idrvrscrs">Drivers and cars</a></li>
+                <li><a id="atmsdrvrs" href="#itmsdrvrs">Teams and Drivers</a></li>
+            </ul> 
         </div>
+        <section class="imgs">
+           <img id="idrvrs" src="assets/img/drivers.jpg" alt="Img Drivers" width="70%">
+           <img id="itms" src="assets/img/teams.png" alt="Img Teams" width="70%">
+           <img id="icrs" src="assets/img/cars.jpg" alt="Img Cars" width="70%">
+           <img id="idrvrscrs" src="assets/img/drivers-and-cars.jpg" alt="Img Drivers and Cars" width="70%">
+           <img id="itmsdrvrs" src="assets/img/teams-and-drivers.jpg" alt="Img Teams and Drivers" width="70%">
+        </section>
+        <footer class="footer">
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <p>Todos los Derechos Reservados</p>
+        </footer>
+      </main>
 </body>
 </html>

@@ -23,33 +23,50 @@ ul, li {
     border: 1px solid #fc1a04;
     transform: rotate(-360deg);
 }
+.shaking{
+    animation: shake 2s ease 0s infinite;
+}
 
-h2{
+h2{   
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: ease;
 }
 h2:hover{
     color: #fc1a04;
-    transform: rotate(360deg);
 }
 
+.imgs img{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.imgs img:hover{
+    width: 95%;
+    
+}
 
-
-
-a {
+.option button {
     display: inline-block;
     background: #0e0e0e;
     color: #fff;
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: linear;
+    border: none;
+    margin-bottom: 5px;
   }
   
-  a:hover {
+.option button:hover {
     background: #0e0e0e;
     color: #fc1a04;
     padding: 25px;
+  }
+.option button:active {
+    background-color: #fc1a04;
+    color: #fff;
+    transform: translateY(4px);
+    border-radius: 5px;
   }
 
   i {
@@ -114,38 +131,42 @@ a {
 
 @media (min-width: 576px) { 
     .container {
-        display: grid; 
-        grid-auto-columns: 1fr; 
         grid-template-columns: 0.5fr 1.5fr; 
-        grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr; 
-        gap: 0px 0px; 
+        grid-template-rows: 120px 600px 120px; 
         grid-template-areas: 
           "nav nav"
-          "option imgs"
           "option imgs"
           "footer footer"; 
       }
       a{
         padding: 8px 16px;
       }
+      .imgs{
+        border-top: 2px solid #fc1a04;
+        height: auto;
+      }
 }
 
 @media (min-width: 992px) { 
     .container {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.5fr 1.5fr; 
-        grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr; 
-        gap: 0px 0px; 
         grid-template-areas: 
           "option nav"
           "option imgs"
-          "option imgs"
           "footer imgs"; 
       }
+      
 }
 
-
+@keyframes shake {
+    from    {transform: rotate(0deg);}
+    4%      {transform: rotate(.5deg);}
+    12.5%   {transform: rotate(-.5deg);}
+    21%     {transform: rotate(.5deg);}
+    29%     {transform: rotate(-.5deg);}
+    37.5%   {transform: rotate(.5deg);}
+    46%     {transform: rotate(-.5deg);}
+    50%,to {transform: rotate(0deg);}
+}
 
 
 
